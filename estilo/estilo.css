@@ -1,0 +1,40 @@
+@charset "utf-8";
+body,html{
+	margin: 0;
+	padding: 0;
+    background-image:url(../imgs/fundoMatematico.jpg);
+    background-size:contain;	
+    font-family:Tahoma, Geneva, sans-serif;
+    font-size:24px;
+    }
+input[type=text]{
+    width:70px;	
+    font-family:Tahoma, Geneva, sans-serif;
+    font-size:24px;
+    text-align:center;
+}
+input[type=button]{
+    font-family:Tahoma, Geneva, sans-serif;
+    font-size:24px;
+}
+.central{
+    width:720px;
+    margin:100px auto;
+}
+.esq,.dir{
+    width:300px;	
+    height:170px;
+    float:left;
+    background-color:rgba(0,213,213,0.9);	
+    padding:30px;
+}
+.esq{
+    text-align:right;
+}
+.dir{
+    text-align:right;
+}
+#resposta{
+    font-size: 13px;
+    color: red;
+}
