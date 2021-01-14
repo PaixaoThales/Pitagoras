@@ -17,7 +17,7 @@ function verifica(){
         vazio = "c";
     }
     if(teste != 1){
-        document.getElementById("resposta").innerHTML = "Preencha pelo menos dois campos com números.";
+        document.getElementById("resposta").innerHTML = "Preencha exatamente dois campos com números.";
         return false;
     }else{
         document.getElementById("resposta").innerHTML = "";
@@ -31,17 +31,22 @@ function calcular(){
         a = parseFloat(document.getElementById('catA').value);
         b = parseFloat(document.getElementById('catB').value);
         c = parseFloat(document.getElementById('hip').value);
-        if(retorno == "a"){
-            a = Math.sqrt((c*c)-(b*b));
-            document.getElementById('catA').value = a;
+        if((Math.abs(b - c) < a && a < (b + c)) && (Math.abs(a - c) < b && b < (a + c)) && (Math.abs(a - b) < c && c < (a + b))){
+            document.getElementById("resposta").innerHTML = "Não forma triângulo.";
+        }else{
+            if(retorno == "a"){
+                a = Math.sqrt((c*c)-(b*b));
+                document.getElementById('catA').value = a;
+            }
+            if(retorno == "b"){
+                b = Math.sqrt((c*c)-(a*a));
+                document.getElementById('catB').value = b;
+            }
+            if(retorno == "c"){
+                c = Math.sqrt((a*a)+(b*b));
+                document.getElementById('hip').value = c;
+            }
         }
-        if(retorno == "b"){
-            b = Math.sqrt((c*c)-(a*a));
-            document.getElementById('catB').value = b;
-        }
-        if(retorno == "c"){
-            c = Math.sqrt((a*a)+(b*b));
-            document.getElementById('hip').value = c;
-        }
+        
     }    
 }

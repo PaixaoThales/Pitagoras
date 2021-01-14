@@ -7,6 +7,12 @@ body,html{
     font-family:Tahoma, Geneva, sans-serif;
     font-size:24px;
     }
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 20px;
+}
 input[type=text]{
     width:70px;	
     font-family:Tahoma, Geneva, sans-serif;
@@ -20,6 +26,11 @@ input[type=button]{
 .central{
     width:720px;
     margin:100px auto;
+}
+.titulo{
+    background-color: rgba(0,213,213,0.9);
+    padding: 30px;
+    text-align: center;
 }
 .esq,.dir{
     width:300px;	
