@@ -14,14 +14,16 @@ h2{
     font-size: 20px;
 }
 input[type=text]{
-    width:70px;	
+    width:115px;	
     font-family:Tahoma, Geneva, sans-serif;
     font-size:24px;
     text-align:center;
+    margin: 2px;
 }
 input[type=button]{
     font-family:Tahoma, Geneva, sans-serif;
     font-size:24px;
+    margin: 2px;
 }
 .central{
     width:720px;
@@ -34,7 +36,7 @@ input[type=button]{
 }
 .esq,.dir{
     width:300px;	
-    height:170px;
+    height:210px;
     float:left;
     background-color:rgba(0,213,213,0.9);	
     padding:30px;
@@ -47,5 +49,4 @@ input[type=button]{
 }
 #resposta{
     font-size: 13px;
-    color: red;
 }
